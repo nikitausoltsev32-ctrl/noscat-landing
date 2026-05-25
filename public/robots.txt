@@ -1,0 +1,9 @@
+# https://noskat.ru robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://noskat.ru/sitemap.xml

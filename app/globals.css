@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-russo: 'Russo One', Impact, sans-serif;
+  --font-nunito: 'Nunito Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-nunito);
+    color: #ffffff;
+    background: #0f0f0f;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-russo);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-body font-bold text-xs rounded-btn transition-all duration-200 ease-smooth hover:bg-accent-dark active:scale-95 uppercase tracking-widest;
+    box-shadow: 0 4px 24px 0 rgba(204,0,0,0.35);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 6px 32px 0 rgba(204,0,0,0.55);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent font-body font-bold text-xs rounded-btn transition-all duration-200 ease-smooth hover:bg-accent hover:text-white active:scale-95 uppercase tracking-widest;
+  }
+
+  .btn-outline:hover {
+    box-shadow: 0 4px 20px 0 rgba(204,0,0,0.25);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-ink-muted font-body font-medium text-sm rounded-btn transition-colors duration-150 hover:text-white hover:bg-surface;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .section-alt {
+    @apply py-16 md:py-20 lg:py-24 bg-[#111111];
+  }
+
+  /* Section heading */
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl text-white uppercase;
+    font-family: var(--font-russo);
+  }
+
+  .section-sub {
+    @apply text-ink-muted text-base md:text-lg leading-relaxed;
+    font-family: var(--font-nunito);
+  }
+
+  /* Card */
+  .card {
+    @apply bg-surface rounded-card border border-surface-dark transition-all duration-200;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.6), 0 0 0 1px rgba(204,0,0,0.15);
+  }
+
+  /* Accent bar decoration */
+  .accent-bar {
+    @apply block w-12 h-0.5;
+    background: linear-gradient(90deg, #cc0000, #e60000);
+  }
+
+  /* Red glow effect for interactive elements */
+  .glow-red {
+    box-shadow: 0 0 20px rgba(204,0,0,0.15);
+  }
+
+  .glow-red:hover {
+    box-shadow: 0 0 30px rgba(204,0,0,0.25);
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 24px 0 rgba(204,0,0,0.35);
+  }
+  50% {
+    box-shadow: 0 4px 32px 0 rgba(204,0,0,0.55);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <defs>
+    <linearGradient id="bg-chery" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="glow-chery" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cc0000;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="260" fill="url(#bg-chery)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="400" height="3" fill="#cc0000"/>
+
+  <!-- Glow effect top -->
+  <rect x="0" y="3" width="400" height="60" fill="url(#glow-chery)"/>
+
+  <!-- Decorative diagonal lines -->
+  <line x1="320" y1="0" x2="420" y2="100" stroke="#cc0000" stroke-width="0.5" opacity="0.3"/>
+  <line x1="340" y1="0" x2="440" y2="100" stroke="#cc0000" stroke-width="0.5" opacity="0.2"/>
+  <line x1="360" y1="0" x2="460" y2="100" stroke="#cc0000" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Car silhouette (simplified) -->
+  <path d="M240 160 C240 160 250 130 270 120 L300 115 L340 120 C360 130 370 160 370 160 L360 168 L250 168 Z"
+        fill="#cc0000" opacity="0.15"/>
+  <path d="M270 120 L280 100 L330 100 L340 120 Z"
+        fill="#cc0000" opacity="0.08"/>
+
+  <!-- Brand name -->
+  <text x="40" y="145"
+        font-family="Impact, Arial Black, sans-serif"
+        font-size="72"
+        font-weight="900"
+        fill="white"
+        letter-spacing="4"
+        opacity="0.95">CHERY</text>
+
+  <!-- Subtitle -->
+  <text x="40" y="175"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#9ca3af"
+        letter-spacing="3">НОСКАТЫ И ЗАПЧАСТИ ИЗ КИТАЯ</text>
+
+  <!-- Bottom accent -->
+  <rect x="40" y="195" width="48" height="3" fill="#cc0000" rx="1.5"/>
+
+  <!-- Model count badge -->
+  <rect x="40" y="215" width="80" height="26" rx="3" fill="#cc0000" stroke="#cc0000" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="233" font-family="Arial, sans-serif" font-size="12" fill="#cc0000" text-anchor="middle" letter-spacing="1">3 МОДЕЛИ</text>
+</svg>

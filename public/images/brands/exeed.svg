@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <defs>
+    <linearGradient id="bg-exeed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="glow-exeed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cc0000;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="260" fill="url(#bg-exeed)"/>
+  <rect x="0" y="0" width="400" height="3" fill="#cc0000"/>
+  <rect x="0" y="3" width="400" height="60" fill="url(#glow-exeed)"/>
+
+  <line x1="310" y1="0" x2="420" y2="110" stroke="#cc0000" stroke-width="0.5" opacity="0.3"/>
+  <line x1="340" y1="0" x2="450" y2="110" stroke="#cc0000" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- X emblem -->
+  <text x="295" y="215"
+        font-family="Impact, Arial Black, sans-serif"
+        font-size="160"
+        fill="#cc0000"
+        opacity="0.06">X</text>
+
+  <text x="40" y="145"
+        font-family="Impact, Arial Black, sans-serif"
+        font-size="72"
+        font-weight="900"
+        fill="white"
+        letter-spacing="4">EXEED</text>
+
+  <text x="40" y="175"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#9ca3af"
+        letter-spacing="3">НОСКАТЫ И ЗАПЧАСТИ ИЗ КИТАЯ</text>
+
+  <rect x="40" y="195" width="48" height="3" fill="#cc0000" rx="1.5"/>
+
+  <rect x="40" y="215" width="80" height="26" rx="3" fill="none" stroke="#cc0000" stroke-width="1" opacity="0.4"/>
+  <text x="80" y="233" font-family="Arial, sans-serif" font-size="12" fill="#cc0000" text-anchor="middle" letter-spacing="1">2 МОДЕЛИ</text>
+</svg>
